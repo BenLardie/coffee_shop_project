@@ -10,3 +10,15 @@ def home_page(request):
 
 def root(request):
     return HttpResponseRedirect('home')
+
+def about(request):
+    html = render(request, 'about.html')
+    return HttpResponse(html)
+
+def menu(request):
+    html = render(request, 'menu.html')
+    return HttpResponse(html)
+
+def location(request):
+    html = render(request, 'location.html')
+    return HttpResponse(html)
