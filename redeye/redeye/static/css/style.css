@@ -16,16 +16,36 @@ body {
 	clear: both;
 }
 
+header {
+    background-color: black;    
+    padding: 15px;
+    position: relative;
+    background: url("/static/images/Header.png") 50% 0 no-repeat fixed;
+}
+
+nav a {
+    float: right;
+    position: relative;
+    top: -30px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #73AE9B;
+    padding: 10px;
+}
 
 
 h1 {
-    background-color: dodgerblue;
+    color: white;
 }
 
-img {
+h2 {
+    text-align: center;
+}
+
+/* img {
     max-width: 100%;
     
-}
+} */
 
 .welcome-page {
 
