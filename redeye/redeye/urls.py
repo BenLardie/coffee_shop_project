@@ -19,7 +19,7 @@ from redeye import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', views.root, name="root"),
-    path('home/', views.home_page name="home_page")
+    path('', views.root, name="root"),
+    path('home', views.home_page, name="home_page")
 
 ]
