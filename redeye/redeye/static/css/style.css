@@ -43,9 +43,19 @@ h2 {
     text-align: center;
 }
 
+.footer-icons {
+   text-align: center;
+}
+
+
 footer {
     background-color: black;
     padding: 20px;
     color: white;
     margin: 0;
+}
+
+
+footer img {
+    margin: 10px;
 }
