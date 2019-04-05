@@ -1,6 +1,28 @@
 {% extends 'base.html' %}
-{% block content %}
-{% load staticfiles %}
 
-<h2>menu</h2>
+{% load staticfiles %}
+{% block content %}
+
+<div class="menus">
+    {% for menu in menu %}
+    <div class="menu">
+    <h2 class="menu-name">{{menu.name}}</h2>
+    <ul class="item">
+    {%for item in item%}
+    {%ifequal item.menu menu%}
+   
+     <li>{{item.name}}<span>{{item.price}}</span></li>
+
+    {%endifequal%}
+    {%endfor%}
+</ul>
+</div>
+{%endfor%}
+</div>
+<p>Flavour Shots (Vanilla or Hazelnut) ¢25</p>
+<p>Milk Alternatives (Soy, Almond, or Lactose-Free) ¢35</p>
+<h3>Pastries & Healthy Bites</h3>
+<p>We offer a rotating selection of fresh 
+        baked pastries from Circles & Squares
+        Vegan soups, salads</p>
 {%endblock%}

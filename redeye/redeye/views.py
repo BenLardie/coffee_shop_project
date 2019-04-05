@@ -1,6 +1,6 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
-
+from redeye.models import Menu, Item
 
 
 
@@ -16,7 +16,8 @@ def about(request):
     return HttpResponse(html)
 
 def menu(request):
-    html = render(request, 'menu.html')
+    context = {'menu' : Menu.objects.all(), 'item' : Item.objects.all}
+    html = render(request, 'menu.html', context)
     return HttpResponse(html)
 
 def location(request):

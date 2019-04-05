@@ -23,6 +23,10 @@ header {
     background: url("/static/images/Header.png") 50% 0 no-repeat fixed;
 }
 
+.logo {
+    margin-left: 10px;
+}
+
 nav a {
     float: right;
     position: relative;
@@ -58,4 +62,41 @@ footer {
 
 footer img {
     margin: 10px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-content {
+    text-align: center;
+}
+
+.menus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    display: block;
+}
+
+.menu-name {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    float: right;
+    /* margin-right: 30px; */
+    font-weight: 300;
 }
